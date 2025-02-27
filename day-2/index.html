@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 2</title>
+    <title>#7DaysOfCode - Day 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Desafio Alura - Day 2</h1>
-    <label for="nome">Qual o seu nome?</label><br>
-    <input type="text" id="nome" name="nome"><br><br>
-    <label for="idade">Qual a sua idade?</label><br>
-    <input type="number" id="idade" name="idade"><br><br>
-    <label for="linguagem">Qual linguagem de programação você está estudando?</label><br><br>
-    <input type="text" id="linguagem" name="linguagem"><br><br>
-    <button id="btnBVindas">Enviar</button>
+    <h1 class="titulo">#7DaysOfCode - Day 2</h1>
+    <h2 class="subtitulo">Responda o formulário:</h2>
+    <div class="formulario">
+        <label class="pergunta" for="nome">Qual o seu nome?</label>
+        <input class="resposta" type="text" id="name" name="nome" placeholder="Nome">
+        <label class="pergunta" for="idade">Qual a sua idade?</label>
+        <input class="resposta" type="text" id="idade" name="idade" placeholder="Idade">
+        <label class="pergunta" for="linguagem">Qual a sua linguagem de programação favorita?</label>
+        <input class="resposta" type="text" id="linguagem" name="linguagem" placeholder="Linguagem favorita">
+    </div>
+    <div class="formulario__resultado">
+        <button id="btnBVindas">Enviar</button>
 
-    <p id="mensagem"></p>
+        <p id="mensagem"></p>
 
-    <h3 id="alternativas"></h3>
+        <h3 id="alternativas"></h3>
 
-    <button id="btn1" hidden>Sim</button>
-    <button id="btn2" hidden>Não</button>
-    <p id="resposta"></p>
+        <button id="btn1" hidden>Sim</button>
+        <button id="btn2" hidden>Não</button>
+        <p id="resposta"></p>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
